@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title> Pratica locaStorage </title>
+</head>
+<body>
+    <p> Local Storage </p>
+
+    <button type="button" onclick="mostraConf()"> Configurações </button>
+    <p id="painel"> </p>
+    
+    <form name="dados" id="fconf">
+        <label> Nome.: </label><br />
+        <input type="text" name="fnome" id="fnome" size="20"> <br> <br>
+
+        <label> Cor de fundo.: </label><br />
+        <input type="radio" name="fcorF" onclick="defineCor(1,'#000')"> Preto <br>
+        <input type="radio" name="fcorF" onclick="defineCor(1,'#FFF')"> Branco <br>
+        <input type="radio" name="fcorF" onclick="defineCor(1,'#F00')"> Vermelho <br>
+        <input type="radio" name="fcorF" onclick="defineCor(1,'#0F0')"> Verde <br>
+        <input type="radio" name="fcorF" onclick="defineCor(1,'#00F')"> Azul <br>
+        <label> Cor de texto.: </label><br />
+        <input type="radio" name="fcorT" onclick="defineCor(2,'#000')"> Preto <br>
+        <input type="radio" name="fcorT" onclick="defineCor(2,'#FFF')"> Branco <br><br>
+        <input type="button" value="Gravar" onclick="gravar()">
+    </form>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
